@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: int_databird_local_bike__avg_order_value
+    description: "Calculates the average order value."
+    columns:
+      - name: customer_id
+        description: "The ID of the customer."
+        tests:
+          - not_null
+          - unique
+
+  - name: int_databird_local_bike__avg_orders_per_customer
+    description: "Calculates the average number of orders per customer."
+    columns:
+      - name: customer_id
+        description: "The ID of the customer."
+        tests:
+          - not_null
+
+  - name: int_databird_local_bike__performance_by_staff_and_manager
+    description: "Analyzes performance by staff and manager."
+    columns:
+      - name: staff_id
+        description: "The ID of the staff member."
+        tests:
+          - not_null
+
+  - name: int_databird_local_bike__sales_by_product-category-brand
+    description: "Calculates sales by product, category, and brand."
+    columns:
+      - name: product_id
+        description: "The ID of the product."
+        tests:
+          - not_null
+
+  - name: int_databird_local_bike__sales_by_store
+    description: "Analyzes sales by store."
+    columns:
+      - name: store_id
+        description: "The ID of the store."
+        tests:
+          - not_null

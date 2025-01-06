@@ -1,0 +1,1 @@
+select * from {{  source('databird_local_bike', 'stores')  }}
